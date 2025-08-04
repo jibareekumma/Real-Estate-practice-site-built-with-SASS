@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <meta name="author" content="Jibare Ekumma" />
+    <link rel="icon" href="images/my personal logo 2.jpg" type="images/jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jibare Real Estate</title>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <header>
+        <!-- SITE LOGO FOR DESIGN -->
+        <div class="logo" title="Jibare Propeties">
+          JIBARE<span
+            >PROPERTIES
+            <img
+              src="icons/thunder-svgrepo-com.svg"
+              alt="logo"
+              width="25"
+              height="25"
+            />
+          </span>
+        </div>
+        <!-- NAAVIGATION BAR -->
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="mbApp.html">Mobile App</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <!-- SIGN UP AND LOGIN BUTTONS -->
+        <div class="navBtns">
+          <a href="signUp.html" class="signUpBtn">Sign Up</a>
+          <a href="logIn.html" class="loginBtn">Log In</a>
+        </div>
+      </header>
+      <main>
+        <!-- BEGINING OF FIRST SECTION -->
+        <section>
+          <!-- WEBSITE DESCRIPTION HEADINGS  -->
+          <div class="headings">
+            <h1>
+              YOUR DREAM <br />
+              LOCATION STARTS HERE
+            </h1>
+            <p>
+              We connect you with trusted agents and listings to make your
+              search smooth, fast and reliable. <br />
+              Start exploring your ideal property today
+            </p>
+          </div>
+
+          <!-- SECTION TO MAKE SELECTION RANGING PRICE AND LOCATION DESIRED -->
+          <div id="searchContainer">
+            <!-- SEARCH BAR -->
+            <div class="optSection">
+              <div class="opt1" id="opt">
+                <label for="opt1">LOOKING FOR</label>
+                <input
+                  type="search"
+                  id="opt1"
+                  placeholder="Residence in Lagos"
+                  maxlength="50"
+                  minlength="3"
+                />
+              </div>
+
+              <!-- RESIDENCE SECTION -->
+              <div class="opt2" id="opt">
+                <label for="opt2">TYPE</label>
+                <select name="Residence" id="opt2">
+                  <option value="Residence">Residence</option>
+                  <option value="Detached House">Detached House</option>
+                  <option value="Bungalow">Bungalow</option>
+                  <option value="Land/Plot">Land/Plot</option>
+                </select>
+              </div>
+
+              <!-- PRICE SECTION -->
+              <div class="opt3" id="opt">
+                <label for="opt3">PRICE</label>
+                <select name="prices" id="opt3">
+                  <option value="$1,000 - $25,000">$1,000 - $25,000</option>
+                  <option value="$25,000 - $60,000">$25,000 - $60,000</option>
+                  <option value="$60,000 - $120,000">$60,000 - $120,000</option>
+                  <option value="$120,000 - $200,000">
+                    $120,000 - $200,000
+                  </option>
+                  <option value="$200,000 - $400,000">
+                    $200,000 - $400,000
+                  </option>
+                </select>
+              </div>
+
+              <!-- SECTION FOR DESIRED LOCATION -->
+              <div class="opt4" id="opt">
+                <label for="opt4">LOCATION</label>
+                <select name="Location" id="opt4">
+                  <option value="Lagos">Lagos</option>
+                  <option value="Port-Harcourt">Port-Harcourt</option>
+                  <option value="Ibadan">Ibadan</option>
+                  <option value="Abuja">Abuja</option>
+                  <option value="Delta-State">Delta-State</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="sponsoredSpouseBar">
+              <label for="sponsorSearchBar"> FOR SPONSORED PROPERTY </label>
+              <input
+                type="search"
+                maxlength="50"
+                minlength="3"
+                placeholder="Search Agent Property"
+              />
+              <img
+                class="searchIcon"
+                src="icons/search-alt-2-svgrepo-com.svg"
+                width="20"
+                height="20"
+                loading="lazy"
+                alt=""
+              />
+              <!-- ADDING AN ADJUSTENT ICON TO WEBPAGE -->
+              <div class="adjustmentIcon">
+                <img
+                  src="icons/adjustment-svgrepo-com.svg"
+                  alt="filter Icon"
+                  loading="lazy"
+                  width="20"
+                  height="20"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="resultContainer">
+            <h3>1075 RESULTS FOUND</h3>
+            <!-- CONTAINER FOR THE SORT BY SELECTION -->
+            <div class="sortContainer">
+              <label for="sorting">Sort By</label>
+              <select name="sortBy" id="sortBy">
+                <option value="recent">recent</option>
+                <option value="cheapest">cheapest</option>
+                <option value="residence">residence</option>
+                <option value="neighborhood">neighborhood</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="houseSection">
+            <!-- First House Card -->
+            <div class="propertyCard1" id="propertyCard">
+              <!-- <img
+                src="images/house 1.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="300"
+                height="350"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard1" id="infoCard">
+                <div class="infoSection1" id="infoSection">
+                  <h5>The Onyx Villa</h5>
+                  <p>23A Bourdillon Road, Ikoyi, Lagos, Nigeria</p>
+                </div>
+                <div class="infoPrice1" id="infoPrice">
+                  <h5>$3,550</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second House card -->
+            <div class="propertyCard2" id="propertyCard">
+              <!-- <img
+                src="images/house 2.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="200"
+                height="200"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard2" id="infoCard">
+                <div class="infoSection2" id="infoSection">
+                  <h5>Gracefield Manor</h5>
+                  <p>11 Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
+                </div>
+                <div class="infoPrice2" id="infoPrice">
+                  <h5>$4,170</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third House card -->
+            <div class="propertyCard3" id="propertyCard">
+              <!-- <img
+                src="images/house 3.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="200"
+                height="200"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard3" id="infoCard">
+                <div class="infoSection3" id="infoSection">
+                  <h5>Olive Groove Estate</h5>
+                  <p>Plot 45 Shehu Shagari Way, Maitama, Abuja, Nigeria</p>
+                </div>
+                <div class="infoPrice3" id="infoPrice">
+                  <h5>$7,300</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth House card -->
+            <div class="propertyCard4" id="propertyCard">
+              <!-- <img
+                src="images/house 4.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="200"
+                height="200"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard4" id="infoCard">
+                <div class="infoSection4" id="infoSection">
+                  <h5>The Sapphire Heights</h5>
+                  <p>
+                    Plot 19 Nnamdi Azikiwe Street, Asokoro Extension, Abuja,
+                    Nigeria
+                  </p>
+                </div>
+                <div class="infoPrice4" id="infoPrice">
+                  <h5>$2,100</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth House card -->
+            <div class="propertyCard5" id="propertyCard">
+              <!-- <img
+                src="images/house 5.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="200"
+                height="200"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard5" id="infoCard">
+                <div class="infoSection5" id="infoSection">
+                  <h5>Harmony Place</h5>
+                  <p>
+                    9 Efeizomor Street, GRA Phase 1, Warri, Delta State, Nigeria
+                  </p>
+                </div>
+                <div class="infoPrice5" id="infoPrice">
+                  <h5>$3,400</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sixth House card -->
+            <div class="propertyCard6" id="propertyCard">
+              <!-- <img
+                src="images/house 6.jpg"
+                alt="House Property Nigeria"
+                loading="lazy"
+                width="200"
+                height="200"
+                title="House Property Nigeria"
+              /> -->
+              <div class="bookMarkIcon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-bookmark-icon lucide-bookmark"
+                >
+                  <path
+                    d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"
+                  />
+                </svg>
+              </div>
+              <!--House inforation card-->
+              <div class="infoCard6" id="infoCard">
+                <div class="infoSection6" id="infoSection">
+                  <h5>The Cocoa Hill Residence</h5>
+                  <p>
+                    28 Jericho Close, Old Bodija, Ibadan, Oyo State, Nigeria
+                  </p>
+                </div>
+                <div class="infoPrice6" id="infoPrice">
+                  <h5>$6,400</h5>
+                  <p>Per Year</p>
+                </div>
+              </div>
+            </div>
+            <!-- GAP HERE BETWEEN DIVS -->
+          </div>
+
+          <!-- VIEW MORE BUTTON -->
+          <button>View More</button>
+        </section>
+
+        <!-- END OF FIRST SECTION -->
+        <article>
+          <div class="whyUsSection">
+            <h3>WHY US</h3>
+            <p>
+              We deliver timeless homes with unmatched qualities, Comfort and
+              style
+            </p>
+          </div>
+
+          <!-- SECTION FOR EXPLAINING AGENCY PURPOSE TO USER -->
+          <div class="clientSection">
+            <!-- FIRST SECTION CARD -->
+            <div class="clientSectionCard1" id="clientSectionCard">
+              <img
+                src="images/client photo 1.jpg"
+                alt="Agents showing client house plan"
+                title="agents showing client house plan"
+                loading="lazy"
+                height="200"
+                width="200"
+              />
+              <!-- SECTION CARD TEXTS -->
+              <div class="sectionCardTexts1" id="sectionCardTexts">
+                <h4>YOU'VE FOUND THE RIGHT PLACE</h4>
+                <p>
+                  At Jibare real estate we believe that finding a house
+                  shouldn't be overwhelming, it should be clear exciting and
+                  empowering. And our platform is here to guide you
+                </p>
+                <br />
+                <p>
+                  With years of experience in Real Esate, we specialize in
+                  matching people with properties that reflect their lifestyle,
+                  budget, and future goals. Whether you're buying your first
+                  home, investing in real estate, or upgrading your living
+                  space, our team is committed to making the process seamless.
+                  We combine local expertise with a client-first mindset to give
+                  you not just a property, but peace of mind. Welcome to the
+                  smarter way to find a home.
+                </p>
+              </div>
+            </div>
+
+            <!-- SECOND SECTION CARD -->
+            <div class="clientSectionCard2" id="clientSectionCard">
+              <img
+                src="images/client photo 2.jpg"
+                alt="Agents showing client house plan"
+                title="Agents showing client house plan"
+                loading="lazy"
+                height="200"
+                width="200"
+              />
+              <!-- SECTION CARD TEXTS -->
+              <div class="SectionCardTexts2" id="sectionCardTexts">
+                <h4>THE SOLUTION YOU HAVE BEEN LOOKING FOR</h4>
+                <p>
+                  You've spent time searching, comparing, and second-guessing —
+                  but now, you've arrived at a platform built to truly serve
+                  you. With all our research, we understand what homes mean to
+                  you
+                </p>
+                <br />
+                <p>
+                  Our mission goes beyond real estate. We’re here to inspire
+                  confidence, simplify your journey, and help you unlock new
+                  possibilities whether it’s your first apartment, a dream
+                  family home, or a smart investment. With every property, we
+                  offer a promise: clarity, care, and a future you can build on.
+                </p>
+              </div>
+            </div>
+            <!-- END OF SECOND CARD -->
+          </div>
+        </article>
+        <!-- APP DOWNLOAD SECTION -->
+        <aside>
+          <div class="downloadSectionTexts">
+            <h4>DOWNLOAD THE APP</h4>
+            <p>
+              Our apps are available on both Apple store and Google play store
+            </p>
+          </div>
+          <!-- MOBILE DOWNLOAD PREVIEW {IPHONE MOCKUPS} SECTION -->
+          <div class="iphoneMockupSection">
+            <!-- INDIVIDUAL APP MOCKKUP PREVIEW 1 -->
+            <div class="mockUp1" id="mockUp">
+              <img
+                src="images/mobileMockUp 1.png"
+                alt="Iphone App preview"
+                loading="lazy"
+              />
+              <!-- SECTION FOR MOBILE PREVIEW TEXTS -->
+              <div class="mockUptexts1" id="mockUpTexts">
+                <h5>BOOK US ANYWHERE</h5>
+                <p>
+                  Download our mobile apps to book us anywhere around the world
+                </p>
+              </div>
+            </div>
+            <!-- END OF INDIVIDUAL PREVIEW -->
+
+            <div class="mockUp2" id="mockUp">
+              <img
+                src="images/mobileMockUp 2.png"
+                alt="Iphone App preview"
+                loading="lazy"
+              />
+              <!-- SECTION FOR MOBILE PREVIEW TEXTS -->
+              <div class="mockUptexts2" id="mockUpTexts">
+                <h5>SEARCH SPECIFIC LOACTION</h5>
+                <p>
+                  Our mobile app allows you to search properties anywhere in the
+                  world
+                </p>
+              </div>
+            </div>
+            <!-- END OF INDIVIDUAL PREVIEW -->
+
+            <div class="mockUp3" id="mockUp">
+              <img
+                src="images/mobileMockUp 3.png"
+                alt="Iphone App preview"
+                loading="lazy"
+              />
+              <!-- SECTION FOR MOBILE PREVIEW TEXTS -->
+              <div class="mockUptexts3" id="mockUpTexts">
+                <h5>PROPERTIES DETAILS</h5>
+                <p>
+                  Get the details of every property in your house, all available
+                  in te mobile app
+                </p>
+              </div>
+            </div>
+            <!-- END OF INDIVIDUAL PREVIEW -->
+          </div>
+
+          <!-- DOWNLOAD BUTTONS -->
+          <div class="downloadBtns">
+            <!--APP STORE BTN-->
+            <a href="#">
+              <img
+                src="icons/app-store-svgrepo-com.svg"
+                alt="app store"
+                width="20"
+                height="20"
+              />
+              Download on App store
+            </a>
+
+            <!--GOOGLE PLAY STORE BTN-->
+            <a href="#">
+              <img
+                src="icons/google-play-store-svgrepo-com.svg"
+                alt="app store"
+                width="20"
+                height="20"
+              />
+              Download on App store
+            </a>
+          </div>
+        </aside>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

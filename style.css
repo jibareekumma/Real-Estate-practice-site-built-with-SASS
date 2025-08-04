@@ -1,0 +1,551 @@
+@font-face {
+  src: url(fonts/UnifrakturMaguntia-Regular.ttf);
+  font-family: startliches;
+}
+@font-face {
+  src: url(fonts/Almendra-Regular.ttf);
+  font-family: informative;
+}
+@font-face {
+  src: url(fonts/Rajdhani-Regular.ttf);
+  font-family: rajdani;
+}
+@font-face {
+  font-family: poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppins;
+}
+
+html {
+  font-size: 62.5;
+}
+
+#mainContainer {
+  margin-top: 1%;
+  width: 90vw;
+  height: auto;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 11rem;
+  margin-bottom: 3rem;
+}
+header .logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+header .logo span {
+  background-color: rgb(47, 111, 196);
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 2px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  height: 2rem;
+  width: 6rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(99, 104, 107);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+header nav ul li a:hover {
+  display: inline-block;
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgb(240, 240, 226);
+  transition: 0.7s ease-in-out;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  height: inherit;
+}
+header nav ul li a:focus {
+  color: black;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+header .navBtns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+header .navBtns .signUpBtn, header .navBtns .loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+header .navBtns .signUpBtn:hover, header .navBtns .loginBtn:hover {
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(47, 111, 196);
+  transition: 0.7s ease-in-out;
+  font-weight: 900;
+  transform: scale(1.05);
+}
+header .navBtns .loginBtn {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+header .navBtns .loginBtn:hover {
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.headings h1 {
+  font-size: 2rem;
+  word-spacing: -1px;
+  font-weight: 900;
+  line-height: 1.8rem;
+}
+.headings p {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1rem;
+  color: rgb(99, 104, 107);
+}
+
+#searchContainer {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.optSection {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+#opt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+#opt label {
+  color: black;
+  font-weight: 900;
+  word-spacing: 1px;
+  letter-spacing: -1px;
+}
+#opt input {
+  background-color: white;
+  width: 10rem;
+  height: 1.8rem;
+  color: rgb(17, 16, 16);
+  border: none;
+  border-radius: 4px;
+}
+#opt input:hover {
+  border: 4px groove rgb(87, 172, 206);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+#opt select {
+  background-color: white;
+  width: 10rem;
+  height: 1.8rem;
+  border: none;
+  color: rgb(17, 16, 16);
+  border-radius: 4px;
+}
+#opt select:hover {
+  border: 4px groove rgb(87, 172, 206);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+#sponsoredSpouseBar {
+  position: relative;
+  right: 1rem;
+}
+#sponsoredSpouseBar label {
+  color: black;
+  font-weight: 900;
+  word-spacing: 1px;
+  letter-spacing: -1px;
+}
+#sponsoredSpouseBar input {
+  background-color: white;
+  width: 18rem;
+  padding-left: 2rem;
+  height: 1.8rem;
+  color: rgb(99, 104, 107);
+  border: none;
+  border-radius: 4px;
+  background-image: url(icons/search-alt-2-svgrepo-com.svg);
+}
+#sponsoredSpouseBar input:hover {
+  border: 4px groove rgb(87, 172, 206);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+#sponsoredSpouseBar .searchIcon {
+  position: relative;
+  right: 18rem;
+  top: 0.4rem;
+}
+#sponsoredSpouseBar .adjustmentIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1.8rem;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  left: 19rem;
+  top: 1.6rem;
+}
+#sponsoredSpouseBar .adjustmentIcon:hover {
+  border: 4px groove rgb(87, 172, 206);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+#resultContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+#resultContainer h3 {
+  word-spacing: 2px;
+  font-weight: 900;
+}
+#resultContainer .sortContainer {
+  font-size: 0.8rem;
+}
+#resultContainer .sortContainer label {
+  color: rgb(99, 104, 107);
+}
+#resultContainer .sortContainer select {
+  font-weight: 800;
+  color: black;
+  border: none;
+  background-color: inherit;
+  width: 5rem;
+}
+
+#houseSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+#propertyCard {
+  border: none;
+  background-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 20rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+}
+#propertyCard .bookMarkIcon {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 17rem;
+  top: 1rem;
+}
+#propertyCard .bookMarkIcon:hover {
+  background-color: rgb(47, 111, 196);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#propertyCard #infoCard {
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  border: none;
+  color: black;
+  background-color: white;
+  width: 90%;
+  height: 4rem;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1rem;
+}
+#propertyCard #infoCard #infoSection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: -0.2rem;
+}
+#propertyCard #infoCard #infoSection h5 {
+  font-weight: 900;
+  color: black;
+  font-family: informative;
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+#propertyCard #infoCard #infoSection p {
+  color: rgb(99, 104, 107);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+#propertyCard #infoCard #infoPrice {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: -0.2rem;
+}
+#propertyCard #infoCard #infoPrice h5 {
+  font-weight: 900;
+  color: black;
+  font-family: informative;
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+#propertyCard #infoCard #infoPrice P {
+  color: rgb(99, 104, 107);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.propertyCard1 {
+  background-image: url(images/house\ 1.jpg);
+}
+
+.propertyCard2 {
+  background-image: url(images/house\ 2.jpg);
+}
+
+.propertyCard3 {
+  background-image: url(images/house\ 3.jpg);
+}
+
+.propertyCard4 {
+  background-image: url(images/house\ 4.jpg);
+}
+
+.propertyCard5 {
+  background-image: url(images/house\ 5.jpg);
+}
+
+.propertyCard6 {
+  background-image: url(images/house\ 6.jpg);
+}
+
+section > button {
+  width: 6rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  left: 47%;
+  background-color: rgb(252, 103, 0);
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 15px;
+}
+section > button:hover {
+  background-color: rgb(47, 111, 196);
+  transition: 0.7s ease-in-out;
+  font-weight: 900;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+article {
+  width: 100%;
+}
+
+.whyUsSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.whyUsSection h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.whyUsSection p {
+  font-size: 0.8rem;
+  color: rgb(99, 104, 107);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.clientSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+#clientSectionCard {
+  display: flex;
+  gap: 3rem;
+}
+#clientSectionCard img {
+  width: 30rem;
+  height: auto;
+  border-radius: 15px;
+}
+#clientSectionCard #sectionCardTexts {
+  width: 40rem;
+}
+#clientSectionCard #sectionCardTexts h4 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+#clientSectionCard #sectionCardTexts p {
+  font-size: 0.9rem;
+  color: rgb(99, 104, 107);
+  line-height: 1.3rem;
+}
+
+.clientSectionCard2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.downloadSectionTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downloadSectionTexts h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  word-spacing: 0.5rem;
+}
+.downloadSectionTexts p {
+  color: rgb(99, 104, 107);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.iphoneMockupSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.iphoneMockupSection #mockUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iphoneMockupSection #mockUp #mockUpTexts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  align-items: center;
+}
+.iphoneMockupSection #mockUp #mockUpTexts h5 {
+  font-size: 1.2rem;
+  font-family: informative;
+  font-weight: 800;
+  word-spacing: 0.3rem;
+}
+.iphoneMockupSection #mockUp #mockUpTexts p {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  color: rgb(99, 104, 107);
+  line-height: 1rem;
+  font-size: 0.9rem;
+}
+.iphoneMockupSection #mockUp .mockUptexts2 {
+  position: relative;
+  top: 0.5rem;
+}
+
+.downloadBtns {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.downloadBtns a {
+  border: 2px solid black;
+  height: 2rem;
+  text-decoration: none;
+  background-color: rgb(151, 157, 158);
+  color: black;
+  font-weight: 800;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+}
+.downloadBtns a:hover {
+  background-color: rgb(47, 111, 196);
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
